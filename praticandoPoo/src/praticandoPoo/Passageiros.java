@@ -24,6 +24,13 @@ public class Passageiros {
 	public void setValorKmPercorrido(double valorKmPercorrido) {
 		this.valorKmPercorrido = valorKmPercorrido;
 	}
+	@Override
+	public String toString() {
+		return "Passageiros [quantPassageiros=" + quantPassageiros + ", destino=" + destino + ", valorKmPercorrido="
+				+ valorKmPercorrido + "]";
+	}
+	
+	
 
 	
 }

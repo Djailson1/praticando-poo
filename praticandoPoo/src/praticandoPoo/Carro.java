@@ -13,6 +13,10 @@ public class Carro {
 	private List<Passageiros> listaPassageiros = new ArrayList<Passageiros>();
 	//um carro para muitos passageiros
 	
+	public List<Passageiros> getListaPassageiros(){
+		return listaPassageiros;
+	}
+	
 	public String getMarca() {
 		return marca;
 	}
@@ -37,6 +41,12 @@ public class Carro {
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
+	@Override
+	public String toString() {
+		return "Carro [marca=" + marca + ", cor=" + cor + ", placa=" + placa + ", ano=" + ano + ", listaPassageiros="
+				+ listaPassageiros + "]";
+	}
+	
 	
 
 }
